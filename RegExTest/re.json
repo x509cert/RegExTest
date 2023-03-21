@@ -1,0 +1,249 @@
+{
+  "regexes": [
+    {
+      "pattern": "^([01]+)+$",
+      "samples": [
+        "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    },
+    {
+      "pattern": "^(([a-z])+.)+[A-Z]([a-z])+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaZa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.baaaaaaaaaaaaaaaaaZa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.caaaaaaaaaaaaaaaaaZa"
+      ]
+    },
+    {
+      "pattern": "^((a|b)+)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "bbbbbaaaaaaaaaaaaaaaaaaaaaaaabbbbbb"
+      ]
+    },
+    {
+      "pattern": "^((x|y)+)+z$",
+      "samples": [
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+        "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyzz",
+        "xxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyzz"
+      ]
+    },
+    {
+      "pattern": "^([a-z]+)*x([a-z]+)*$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaax",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaax",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaax"
+      ]
+    },
+
+    {
+      "pattern": "^([a-z]+)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "cccccccccccccccccccccccccccccc",
+        "dddddddddddddddddddddddddddddd",
+        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "pattern": "^((a+){2,})+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^(([a-z]|[A-Z])+)+$",
+      "samples": [
+        "aAaAaAaAaAaAaAaAaAaAaAaAaAaAaA",
+        "bBbBbBbBbBbBbBbBbBbBbBbBbBbBbB",
+        "cCcCcCcCcCcCcCcCcCcCcCcCcCcCcCc",
+        "dDdDdDdDdDdDdDdDdDdDdDdDdDdDdD",
+        "eEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeE"
+      ]
+    },
+    {
+      "pattern": "^(a|aa){1,10}$",
+      "samples": [
+        "aaaaaa",
+        "aaaaaaaaaa",
+        "aaaaaaaaaaaa",
+        "aaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^(a|b)*c$",
+      "samples": [
+        "abababababababababababababababababababababababababababababababac",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbc",
+        "abababababababababababababababababababababababababababababababaccc",
+        "aabbccaabbccaabbccaabbccaabbccaabbcc",
+        "ababababababababababababababababababc"
+      ]
+    },
+
+    {
+      "pattern": "^(([a-z]+)+)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "cccccccccccccccccccccccccccccc",
+        "dddddddddddddddddddddddddddddd",
+        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      ]
+    },
+    {
+      "pattern": "^([a-zA-Z]+)+((?:\\d{1,2}\\.){3}\\d{1,2})$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa255.255.255.255",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb192.168.0.1",
+        "cccccccccccccccccccccccccccccccccccccccccccccc10.0.0.1",
+        "ddddddddddddddddddddddddddddddddddddddddddddd127.0.0.1",
+        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee1.1.1.1"
+      ]
+    },
+    {
+      "pattern": "^((a|aa)+)+$",
+      "samples": [
+        "aaaaaa",
+        "aaaaaaaaaa",
+        "aaaaaaaaaaaa",
+        "aaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^(([a-z])+.)+[A-Z]([a-z])+\\d*$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaZa111111",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.baaaaaaaaaaaaaaaaaZa999999",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.caaaaaaaaaaaaaaaaaZa1234567890",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.daaaaaaaaaaaaaaaaaZa0987654321",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.eaaaaaaaaaaaaaaaaaZa111222333444555666777888999000"
+      ]
+    },
+    {
+      "pattern": "^((a|b)+){1,10}$",
+      "samples": [
+        "aaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaa",
+        "ababababababababababababababababababababababababababababababababab",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbb"
+      ]
+    },
+    {
+      "pattern": "^((a|aa)+)+$",
+      "samples": [
+        "aaaaaa",
+        "aaaaaaaaaa",
+        "aaaaaaaaaaaa",
+        "aaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^(([a-z])+.)+[A-Z]([a-z])+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaZa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.baaaaaaaaaaaaaaaaaZa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.caaaaaaaaaaaaaaaaaZa"
+      ]
+    },
+    {
+      "pattern": "^([a-zA-Z]+)+((?:\\d{1,2}\\.){3}\\d{1,2})$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa255.255.255.255",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb192.168.0.1",
+        "cccccccccccccccccccccccccccccccccccccccccccccc10.0.0.1",
+        "ddddddddddddddddddddddddddddddddddddddddddddd127.0.0.1",
+        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee1.1.1.1"
+      ]
+    },
+    {
+      "pattern": "^((a|b)+)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "cccccccccccccccccccccccccccccc"
+      ]
+    },
+    {
+      "pattern": "^(a|b)*c$",
+      "samples": [
+        "abababababababababababababababababababababababababababababababac",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbc",
+        "abababababababababababababababababababababababababababababababaccc"
+      ]
+    },
+
+    {
+      "pattern": "^(a|aa)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^([0-9]+)*[a-z]+([0-9]+)*$",
+      "samples": [
+        "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "pattern": "^(a+)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^((aa)+)+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "pattern": "^(([a-z])+.)+[a-z]+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaZa",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.baaaaaaaaaaaaaaaaaZb",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.caaaaaaaaaaaaaaaaaZc",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.daaaaaaaaaaaaaaaaaZd",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.eaaaaaaaaaaaaaaaaaZea"
+      ]
+    },
+    {
+      "pattern": "^(([a-z])+.)+[A-Z]([a-z])+$",
+      "samples": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    }
+  ]
+}
+       
+    
