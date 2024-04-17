@@ -1,6 +1,6 @@
 ﻿// ReDoS test cases
 // Michael Howard (mikehow@microsoft.com), Azure SQL Data Security
-// 4/27/2023
+// 4/16/2024
 
 // The code reads a file containing a list of regular expressions and a list of strings to match against.
 // It then runs each regular expression against each string and reports the time taken to do so.
@@ -27,7 +27,7 @@ foreach (var testElement in document.RootElement.GetProperty("regexes").Enumerat
         continue;
     
     // Print out the test results
-    Console.WriteLine($"Pattern: {pattern}");
+    Console.WriteLine($"\nPattern: {pattern}");
     foreach (var sample in samples)
     {
         var testSample = sample.GetString();
@@ -42,14 +42,17 @@ foreach (var testElement in document.RootElement.GetProperty("regexes").Enumerat
         // replace the code below with the regex engine under test
         try
         {
-            var re = new Regex(pattern, RegexOptions.None, TimeSpan.FromSeconds(TIMEOUT));
+            var options = RegexOptions.None; // RegexOptions.NonBacktracking
+            var re = new Regex(pattern, options, TimeSpan.FromSeconds(TIMEOUT));
             var m = re.Match(sample.ToString());
             if (m.Success)
             {
                 match = true;
                 timedOut = false;
             }
-        } catch (RegexMatchTimeoutException) {
+        }
+        catch (RegexMatchTimeoutException)
+        {
             timedOut = true;
             match = false;
         }
