@@ -14,7 +14,7 @@ using System.Diagnostics;
 using var stream = File.OpenRead("re.json"); // read the tests (this is a symlink to the real file in my tests)
 using var document = JsonDocument.Parse(stream);
 
-const int TIMEOUT = 5;
+const int TIMEOUT = 4;
 
 foreach (var testElement in document.RootElement.GetProperty("regexes").EnumerateArray())
 {
